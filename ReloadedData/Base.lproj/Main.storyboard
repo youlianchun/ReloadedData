@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ule-Zr-Mg8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bqs-bP-AXs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-k4-MNB" customClass="TestTableView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-bv-7UE">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="reloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fsh-To-lZZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bqs-bP-AXs" firstAttribute="top" secondItem="0KR-bv-7UE" secondAttribute="bottom" id="4d4-RK-YBB"/>
+                            <constraint firstItem="qNv-k4-MNB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iib-6s-n93"/>
+                            <constraint firstItem="0KR-bv-7UE" firstAttribute="top" secondItem="qNv-k4-MNB" secondAttribute="bottom" id="Rue-M4-WVQ"/>
+                            <constraint firstItem="qNv-k4-MNB" firstAttribute="top" secondItem="Ule-Zr-Mg8" secondAttribute="bottom" id="T7a-bp-zrA"/>
+                            <constraint firstItem="0KR-bv-7UE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="khj-Jz-tAN"/>
+                            <constraint firstItem="Bqs-bP-AXs" firstAttribute="top" secondItem="qNv-k4-MNB" secondAttribute="bottom" constant="44" id="mwO-bD-DKW"/>
+                            <constraint firstAttribute="trailing" secondItem="0KR-bv-7UE" secondAttribute="trailing" id="oUE-IW-oUw"/>
+                            <constraint firstAttribute="trailing" secondItem="qNv-k4-MNB" secondAttribute="trailing" id="uCO-E2-tNo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="qNv-k4-MNB" id="x53-8N-IDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
